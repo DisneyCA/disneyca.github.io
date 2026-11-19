@@ -11,12 +11,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png?v=2">
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png?v=2">
     <link rel="shortcut icon" href="images/favicon/favicon-32x32.png?v=2">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=3">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=4">
     
   </head>
 
   <body>
-    <table class="site-container" style="width:100%;max-width:850px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <table class="site-container"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -56,10 +56,6 @@
           </tbody></table>
           <script type="text/javascript">
             document.addEventListener('DOMContentLoaded', function() {
-              if (window.matchMedia('(max-width: 800px)').matches) {
-                return;
-              }
-
               var wraps = document.querySelectorAll('.profile-image-wrap');
 
               wraps.forEach(function(wrap) {
@@ -80,7 +76,7 @@
           </script>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
+              <td class="research-intro">
                 <h2>Research</h2>
                 <p>
                       I'm interested in robot design, controls, and learning-based methods for robots operating in challenging real-world environments.
@@ -88,303 +84,170 @@
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px 0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="project-list"><tbody>
 
 
 <tr class="project-row">
-  <td class="project-media-cell" style="padding:4px 16px 16px 16px;width:20%;vertical-align:middle">
-    <div class="project-meta-mobile mobile-only">
-      <span class="papertitle">UMI-Underwater: Learning Underwater Manipulation without Underwater Teleoperation</span>
-      <br>
-      Hao Li*,
-      <strong>Long Yin Chung*</strong>,
-      Jack Goler,
-      Ryan Zhang,
-      Xiaochi Xie,
-      <br>
-      Huy Ha,
-      Shuran Song,
-      Mark Cutkosky
-      <br>
-      <span style="font-size:small;color:#555;">* indicates equal contribution</span>
-      <br>
-      <em>Robotics: Science and Systems (RSS)</em>, 2026
-      <br>
-      <a href="https://umi-under-water.github.io/">project page</a> /
-      <a href="https://arxiv.org/abs/2603.27012">arXiv</a>
-    </div>
-    <video id="video-umi" width="220" autoplay loop muted playsinline preload="auto" style="display:block;max-width:220px;width:220px;height:auto;margin:0 auto;border:1px solid #ddd;border-radius:8px;">
+  <td class="project-media-cell">
+    <video id="video-umi" width="1920" height="1080" autoplay loop muted playsinline preload="auto">
       <source src="images/teaser-small.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </td>
-  <td class="project-content-cell" style="padding:0px 8px 8px 8px;width:80%;vertical-align:middle">
-    <div class="project-meta-desktop desktop-only">
-      <span class="papertitle">UMI-Underwater: Learning Underwater Manipulation without Underwater Teleoperation</span>
-      <br>
+  <td class="project-content-cell">
+    <div class="project-meta">
+      <h3 class="project-heading">
+        <a class="papertitle" href="https://umi-under-water.github.io/">UMI-Underwater: Learning Underwater Manipulation without Underwater Teleoperation</a>
+      </h3>
       Hao Li*,
       <strong>Long Yin Chung*</strong>,
       Jack Goler,
       Ryan Zhang,
       Xiaochi Xie,
-      <br>
       Huy Ha,
       Shuran Song,
       Mark Cutkosky
       <br>
-      <span style="font-size:small;color:#555;">* indicates equal contribution</span>
+      <span class="contribution-note">* indicates equal contribution</span>
       <br>
-      <em>Robotics: Science and Systems (RSS)</em>, 2026
+      <span class="paper-venue"><em>Robotics: Science and Systems (RSS)</em>, 2026</span>
       <br>
       <a href="https://umi-under-water.github.io/">project page</a> /
       <a href="https://arxiv.org/abs/2603.27012">arXiv</a>
-      <p></p>
     </div>
     <p>
-      Underwater robotic grasping is difficult due to degraded, highly variable imagery and the expense of collecting diverse underwater demonstrations. We introduce a system that (i) autonomously collects successful underwater grasp demonstrations via a self-supervised data collection pipeline and (ii) transfers grasp knowledge from on-land human demonstrations through a depth-based affordance representation that bridges the on-land-to-underwater domain gap and is robust to lighting and color shift.
+      We learn underwater grasping through autonomous underwater demonstration collection and transfer from on-land human demonstrations, using depth-based affordances to bridge the domain gap.
     </p>
   </td>
 </tr>
 
 
 <tr class="project-row">
-  <td class="project-media-cell" style="padding:16px;width:20%;vertical-align:middle">
-    <div class="project-meta-mobile mobile-only">
-      <span class="papertitle">Long-Reach Manipulation for Assembly and Outfitting of Lunar Structures</span>
-      <br>
-      Stanley Wang,
-      Velin Kojouharov,
-      <strong>Long Yin Chung</strong>,
-      Daniel Morton,
-      Mark Cutkosky
-      <br>
-      <em>International Conference on Space Robotics (iSpaRo25)</em>, 2025
-      <br>
-      <span style="color:#c99a00;"><strong>★ Best Paper Award in Planetary Robotics ★</strong></span>
-      <br>
-      <a href="https://stanleywang1.github.io/isparo25_paper/">project page</a> /
-      <a href="https://arxiv.org/abs/2603.29226">arXiv</a>
-    </div>
-    <video id="video-cable" width="220" autoplay loop muted playsinline preload="auto" style="display:block;max-width:220px;width:220px;height:auto;margin:0 auto;border:1px solid #ddd;border-radius:8px;">
+  <td class="project-media-cell">
+    <video id="video-cable" width="1920" height="1080" autoplay loop muted playsinline preload="auto">
       <source src="images/trimmed_cable.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </td>
-  <td class="project-content-cell" style="padding:8px;width:80%;vertical-align:middle">
-    <div class="project-meta-desktop desktop-only">
-      <span class="papertitle">Long-Reach Manipulation for Assembly and Outfitting of Lunar Structures</span>
-      <br>
+  <td class="project-content-cell">
+    <div class="project-meta">
+      <h3 class="project-heading">
+        <a class="papertitle" href="https://stanleywang1.github.io/isparo25_paper/">Long-Reach Manipulation for Assembly and Outfitting of Lunar Structures</a>
+      </h3>
       Stanley Wang,
       Velin Kojouharov,
       <strong>Long Yin Chung</strong>,
       Daniel Morton,
       Mark Cutkosky
       <br>
-      <em>International Conference on Space Robotics (iSpaRo25)</em>, 2025
+      <span class="paper-venue"><em>International Conference on Space Robotics (iSpaRo25)</em>, 2025</span>
       <br>
-      <span style="color:#c99a00;"><strong>★ Best Paper Award in Planetary Robotics ★</strong></span>
+      <span class="paper-award"><strong>★ Best Paper Award in Planetary Robotics ★</strong></span>
       <br>
       <a href="https://stanleywang1.github.io/isparo25_paper/">project page</a> /
       <a href="https://arxiv.org/abs/2603.29226">arXiv</a>
-      <p></p>
     </div>
     <p>
-      We develop a compact long-reach manipulator with a deployable composite boom designed for autonomous cable outfitting and construction tasks on the lunar surface. We employ control strategies to mitigate deflection, vibration, and blossoming effects inherent to the deployable structure. Experiments demonstrate endpoint accuracy under 15 mm for boom lengths up to 1.8 m, enabling fine manipulation across large workspaces.
+      We develop a deployable-boom manipulator for autonomous cable outfitting of lunar structures. Control strategies mitigate deflection and vibration, achieving endpoint accuracy under 15 mm at boom lengths up to 1.8 m.
     </p>
   </td>
 </tr>
 
 <tr class="project-row">
-  <td class="project-media-cell" style="padding:16px;width:20%;vertical-align:middle">
-    <div class="project-meta-mobile mobile-only">
-      <span class="papertitle">GIRAF: Greatly Increased Reach for Adaptive Fieldwork</span>
-      <br>
-      Stanley Wang,
-      <strong>Long Yin Chung</strong>,
-      Lukas Klostermair,
-      Daniel Morton,
-      Mark Cutkosky
-      <br>
-      <em>IEEE ICRA Space Robotics Workshop (SRW)</em>, 2026
-      <br>
-      <a href="https://openreview.net/forum?id=xWFFMqySMY">paper</a> /
-      <a href="https://space-robotics-workshop.github.io/icra2026/images/posters/SRW_10_WANG%20-%20Stanley%20J%20Wang.pdf">poster</a>
-    </div>
-    <video id="video-giraf" width="220" autoplay loop muted playsinline preload="auto" style="display:block;max-width:220px;width:220px;height:auto;margin:0 auto;border:1px solid #ddd;border-radius:8px;">
+  <td class="project-media-cell">
+    <video id="video-giraf" width="1920" height="1080" autoplay loop muted playsinline preload="auto">
       <source src="images/giraf.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </td>
-  <td class="project-content-cell" style="padding:8px;width:80%;vertical-align:middle">
-    <div class="project-meta-desktop desktop-only">
-      <span class="papertitle">GIRAF: Greatly Increased Reach for Adaptive Fieldwork</span>
-      <br>
+  <td class="project-content-cell">
+    <div class="project-meta">
+      <h3 class="project-heading">
+        <a class="papertitle" href="https://openreview.net/forum?id=xWFFMqySMY">GIRAF: Greatly Increased Reach for Adaptive Fieldwork</a>
+      </h3>
       Stanley Wang,
       <strong>Long Yin Chung</strong>,
       Lukas Klostermair,
       Daniel Morton,
       Mark Cutkosky
       <br>
-      <em>IEEE ICRA Space Robotics Workshop (SRW)</em>, 2026
+      <span class="paper-venue"><em>IEEE ICRA Space Robotics Workshop (SRW)</em>, 2026</span>
       <br>
       <a href="https://openreview.net/forum?id=xWFFMqySMY">paper</a> /
       <a href="https://space-robotics-workshop.github.io/icra2026/images/posters/SRW_10_WANG%20-%20Stanley%20J%20Wang.pdf">poster</a>
-      <p></p>
     </div>
     <p>
-      GIRAF pairs an ANYmal D quadruped with a long-reach deployable manipulator, using a deployable joint to extend reach beyond 3 m while preserving useful payload capacity. This suits construction, inspection, and maintenance tasks across large structures in field and space environments, such as cable routing, large-surface cleaning, and servicing distributed lunar infrastructure. We present the system design, an optimization-based formulation for robust mobile manipulation that substantially reduces required base motions, and initial hardware deployments.
+      GIRAF combines an ANYmal D quadruped with a deployable manipulator for reach beyond 3 m. We present an optimization-based approach to mobile manipulation that reduces required base motions.
     </p>
   </td>
 </tr>
 
 <tr class="project-row">
-  <td class="project-media-cell" style="padding:16px;width:20%;vertical-align:middle">
-    <div class="project-meta-mobile mobile-only">
-      <span class="papertitle">Fiber Bragg Grating Whiskers for Bioinspired Hydrodynamic Perception on Underwater Robots</span>
-      <br>
-      Hao Li,
-      Tianyu Tu,
-      Siyue Yao,
-      Ziyang Chang,
-      Juhyun Jung,
-      <br>
-      Xiaochi Xie,
-      <strong>Long Yin Chung</strong>,
-      Tian-Ao Ren,
-      Genliang Chen,
-      Mark Cutkosky
-      <br>
-      <em>arXiv preprint</em>, 2026
-      <br>
-      <a href="https://bdml.stanford.edu/pages/FBG_Whisker_share/">project page</a> /
-      <a href="https://arxiv.org/abs/2608.24724">arXiv</a>
-    </div>
-    <video id="video-whisker" width="220" autoplay loop muted playsinline preload="auto" style="display:block;max-width:220px;width:220px;height:auto;margin:0 auto;border:1px solid #ddd;border-radius:8px;">
+  <td class="project-media-cell">
+    <video id="video-whisker" width="1280" height="720" autoplay loop muted playsinline preload="auto">
       <source src="images/fbg_whisker.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </td>
-  <td class="project-content-cell" style="padding:8px;width:80%;vertical-align:middle">
-    <div class="project-meta-desktop desktop-only">
-      <span class="papertitle">Fiber Bragg Grating Whiskers for Bioinspired Hydrodynamic Perception on Underwater Robots</span>
-      <br>
+  <td class="project-content-cell">
+    <div class="project-meta">
+      <h3 class="project-heading">
+        <a class="papertitle" href="https://bdml.stanford.edu/pages/FBG_Whisker_share/">Fiber Bragg Grating Whiskers for Bioinspired Hydrodynamic Perception on Underwater Robots</a>
+      </h3>
       Hao Li,
       Tianyu Tu,
       Siyue Yao,
       Ziyang Chang,
       Juhyun Jung,
-      <br>
       Xiaochi Xie,
       <strong>Long Yin Chung</strong>,
       Tian-Ao Ren,
       Genliang Chen,
       Mark Cutkosky
       <br>
-      <em>arXiv preprint</em>, 2026
+      <span class="paper-venue"><em>arXiv preprint</em>, 2026</span>
       <br>
       <a href="https://bdml.stanford.edu/pages/FBG_Whisker_share/">project page</a> /
       <a href="https://arxiv.org/abs/2608.24724">arXiv</a>
-      <p></p>
     </div>
     <p>
-      Harbor seals track hydrodynamic trails with their vibrissae, sensing moving targets passively in dark or turbid water. We build compact fiber Bragg grating whiskers with the same wavy taper and elliptical cross-section, on a superelastic NiTi core in a urethane shell that recovers from large underwater deflections. Towing tests show a monotonic response from 0.1 to 0.6 m/s with strongly suppressed self-induced oscillation, and a single front-mounted whisker let a small underwater robot pick the correct branch in 17 of 20 trials from whisker signals alone.
+      We develop seal-inspired fiber Bragg grating whiskers for underwater flow sensing. Using one whisker’s signals alone, an underwater robot chose the correct branch in 17 of 20 trials.
     </p>
   </td>
 </tr>
 
 <tr class="project-row">
-  <td class="project-media-cell" style="padding:16px;width:20%;vertical-align:middle;text-align:center;">
-    <div class="project-meta-mobile mobile-only">
-      <span class="papertitle">Long-Reach Robotic Cleaning for Lunar Solar Arrays</span>
-      <br>
-      Stanley Wang,
-      Velin Kojouharov,
-      <strong>Long Yin Chung</strong>,
-      Daniel Morton,
-      Mark Cutkosky
-      <br>
-      <em>International Conference on Space Robotics (iSpaRo25)</em>, 2025
-      <br>
-      <a href="https://stanleywang1.github.io/isparo25_workshop/">project page</a> /
-      <a href="https://arxiv.org/abs/2603.29240">arXiv</a>
-    </div>
-    <div id="cleaning-media-pair" style="display:inline-flex;align-items:center;gap:0;justify-content:center;">
-      <video id="video-cleaning" width="160" autoplay loop muted playsinline preload="auto" style="display:block;width:auto;height:auto;max-width:220px;border:1px solid #ddd;border-radius:8px;">
+  <td class="project-media-cell">
+    <div id="cleaning-media-pair">
+      <video id="video-cleaning" width="720" height="1280" autoplay loop muted playsinline preload="auto">
         <source src="images/project.MP4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <img id="image-cleaning" src="images/image (21).png" alt="robotic cleaning still" style="display:block;height:auto;width:auto;border:1px solid #ddd;border-radius:8px;">
+      <img id="image-cleaning" src="images/image (21).png" width="970" height="1104" alt="robotic cleaning still">
     </div>
   </td>
-  <td class="project-content-cell" style="padding:8px;width:80%;vertical-align:middle">
-    <div class="project-meta-desktop desktop-only">
-      <span class="papertitle">Long-Reach Robotic Cleaning for Lunar Solar Arrays</span>
-      <br>
+  <td class="project-content-cell">
+    <div class="project-meta">
+      <h3 class="project-heading">
+        <a class="papertitle" href="https://stanleywang1.github.io/isparo25_workshop/">Long-Reach Robotic Cleaning for Lunar Solar Arrays</a>
+      </h3>
       Stanley Wang,
       Velin Kojouharov,
       <strong>Long Yin Chung</strong>,
       Daniel Morton,
       Mark Cutkosky
       <br>
-      <em>International Conference on Space Robotics (iSpaRo25)</em>, 2025
+      <span class="paper-venue"><em>International Conference on Space Robotics (iSpaRo25)</em>, 2025</span>
       <br>
       <a href="https://stanleywang1.github.io/isparo25_workshop/">project page</a> /
       <a href="https://arxiv.org/abs/2603.29240">arXiv</a>
-      <p></p>
     </div>
     <p>
-      A small mobile robot equipped with a long-reach manipulator is studied for large-scale cleaning of lunar solar arrays. Endpoint force sensing and a velocity-based admittance control policy enables stable contact regulation (~2N), demonstrating autonomous maintenance capabilities.
+      We develop force control for a lightweight deployable manipulator intended for lunar solar-array cleaning. A compliant wrist, force sensor, and velocity-based admittance controller maintain gentle contact during surface wiping. In benchtop whiteboard experiments, the arm maintained approximately 2 N normal force while extending from 0.3 to 1.0 m, with approximately 0.2 N RMS force error after initial contact.
     </p>
   </td>
 </tr>
 
-<script type="text/javascript">
-  (function() {
-    function syncCleaningVideoHeight() {
-      var reference = document.getElementById('video-cable') || document.getElementById('video-umi');
-      var target = document.getElementById('video-cleaning');
-      var companion = document.getElementById('image-cleaning');
-      var pair = document.getElementById('cleaning-media-pair');
-      if (!reference || !target) return;
-
-      var referenceHeight = reference.clientHeight;
-      if (referenceHeight > 0) {
-        var targetHeight = (referenceHeight * 1.25);
-
-        if (window.matchMedia('(max-width: 800px)').matches && pair && companion &&
-            target.videoWidth && target.videoHeight && companion.naturalWidth && companion.naturalHeight) {
-          var availableWidth = pair.parentElement ? pair.parentElement.clientWidth : 0;
-          var combinedAspect = (target.videoWidth / target.videoHeight) +
-                               (companion.naturalWidth / companion.naturalHeight);
-          if (availableWidth > 0 && combinedAspect > 0) {
-            var maxHeightToFit = availableWidth / combinedAspect;
-            if (targetHeight > maxHeightToFit) {
-              targetHeight = maxHeightToFit;
-            }
-          }
-        }
-
-        target.style.height = targetHeight + 'px';
-        target.style.width = 'auto';
-        if (companion) {
-          companion.style.height = targetHeight + 'px';
-          companion.style.width = 'auto';
-        }
-      }
-    }
-
-    var umiVideo = document.getElementById('video-umi');
-    var cableVideo = document.getElementById('video-cable');
-    var cleaningVideo = document.getElementById('video-cleaning');
-
-    if (umiVideo) umiVideo.addEventListener('loadedmetadata', syncCleaningVideoHeight);
-    if (cableVideo) cableVideo.addEventListener('loadedmetadata', syncCleaningVideoHeight);
-    if (cleaningVideo) cleaningVideo.addEventListener('loadedmetadata', syncCleaningVideoHeight);
-
-    window.addEventListener('load', syncCleaningVideoHeight);
-    window.addEventListener('resize', syncCleaningVideoHeight);
-  })();
-</script>
 
 <!--
 <tr onmouseout="zipmap_stop()" onmouseover="zipmap_start()">
